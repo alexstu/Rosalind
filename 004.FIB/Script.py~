@@ -1,0 +1,22 @@
+import sys
+
+def Fib(n, k):
+
+	result = 0
+
+	if (n == 1):
+		result = 1
+
+	if (n == 2):
+		result = 1
+
+	if (n > 2):
+		result = Fib(n-1, k) + k*Fib(n-2, k)
+
+	return result
+
+print Fib(31,5)
+
+
+
+
